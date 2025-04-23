@@ -7,4 +7,6 @@ import com.jsp.ecommerce.entity.Merchant;
 
 public interface MerchantRepository extends JpaRepository<Merchant, Long> {
 	boolean existsByEmail(String email);
+
+	Merchant findByEmail(String email);
 }

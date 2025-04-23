@@ -68,6 +68,8 @@ public class AdminServiceImpl implements AdminService {
 			admin.setPassword(AES.encrypt(dto.getPassword()));
 			adminRepository.save(admin);
 			session.setAttribute("pass", "Account Created Success");
+			session.removeAttribute("otp");
+			session.removeAttribute("userDto");
 			return "redirect:/";
 		} else {
 			session.setAttribute("fail", "Otp Missmatch");
