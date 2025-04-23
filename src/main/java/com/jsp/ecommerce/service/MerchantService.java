@@ -6,7 +6,7 @@ import org.springframework.validation.BindingResult;
 
 import com.jsp.ecommerce.dto.UserDto;
 
-public interface CustomerService {
+public interface MerchantService {
 
 	String register(UserDto userDto, Model model);
 

@@ -1,4 +1,3 @@
-
 package com.jsp.ecommerce.service;
 
 import org.springframework.ui.Model;
@@ -6,10 +5,14 @@ import org.springframework.validation.BindingResult;
 
 import com.jsp.ecommerce.dto.UserDto;
 
-public interface CustomerService {
+import jakarta.servlet.http.HttpSession;
+
+public interface AdminService {
 
 	String register(UserDto userDto, Model model);
 
-	String register(UserDto userDto, BindingResult result);
+	String register(UserDto userDto, BindingResult result, HttpSession session);
+
+	String sumbitOtp(int otp, HttpSession session);
 
 }
