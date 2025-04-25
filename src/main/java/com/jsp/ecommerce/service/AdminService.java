@@ -1,3 +1,4 @@
+
 package com.jsp.ecommerce.service;
 
 import org.springframework.ui.Model;
@@ -14,5 +15,7 @@ public interface AdminService {
 	String register(UserDto userDto, BindingResult result, HttpSession session);
 
 	String sumbitOtp(int otp, HttpSession session);
+
+	String loadHome(HttpSession session);
 
 }

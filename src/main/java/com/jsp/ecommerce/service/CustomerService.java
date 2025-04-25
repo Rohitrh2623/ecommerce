@@ -16,4 +16,6 @@ public interface CustomerService {
 
 	String sumbitOtp(int otp, HttpSession session);
 
+	String loadHome(HttpSession session);
+
 }
